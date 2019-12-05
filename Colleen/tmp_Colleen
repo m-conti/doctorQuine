@@ -1,14 +1,17 @@
 # include <stdio.h>
 
-// ma fonction print
+/*
+	ma fonction print
+*/
 void	print(char *s) {
-	printf(s,10,10,47,47,10,9,10,9,10,10,10,9,9,10,10,9,47,47,10,9,9,34,s,34,10,9,10,9,10);
+	printf(s,10,47,9,34,s);
 }
 
 int		main(void) {
-
-	// ma string
-	char	*s = "# include <stdio.h>%c%c%c%c ma fonction print%cvoid%cprint(char *s) {%c%cprintf(s,10,10,47,47,10,9,10,9,10,10,10,9,9,10,10,9,47,47,10,9,9,34,s,34,10,9,10,9,10);%c}%c%cint%c%cmain(void) {%c%c%c%c%c ma string%c%cchar%c*s = %c%s%c;%c%cprint(s);%c%creturn (0);%c}";
+/*
+	ma string
+*/
+	char	*s = "# include <stdio.h>%1$c%1$c%2$c*%1$c%3$cma fonction print%1$c*%2$c%1$cvoid%3$cprint(char *s) {%1$c%3$cprintf(s,10,47,9,34,s);%1$c}%1$c%1$cint%3$c%3$cmain(void) {%1$c%2$c*%1$c%3$cma string%1$c*%2$c%1$c%3$cchar%3$c*s = %4$c%5$s%4$c;%1$c%3$cprint(s);%1$c%3$creturn (0);%1$c}";
 	print(s);
 	return (0);
 }
