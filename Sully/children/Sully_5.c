@@ -18,6 +18,7 @@ int	main(void) {
 	asprintf(&exe_name, "Sully_%d", i - 1);
 	asprintf(&file_name, "%s.c", exe_name);
 	asprintf(&cmd, "clang -Wall -Wextra -Werror ./%1$s -o %2$s", file_name, exe_name);
+
 	asprintf(&exe, "./%1$s", exe_name);
 
 	if (!(file = fopen(file_name, "w"))) {
